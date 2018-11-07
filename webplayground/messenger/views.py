@@ -21,3 +21,6 @@ class ThreadDetail(DetailView):
         if self.request.user not in obj.users.all():
             raise Http404()
         return obj
+
+def add_message(request, pk):
+    pass
